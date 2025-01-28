@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Home } from "lucide-react";
+import { Menu, X, Home, FileText, Archive, Send, Info } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
     { label: "Home", path: "/", icon: <Home size={16} /> },
-    { label: "About", path: "/about" },
-    { label: "Syllabus", path: "/syllabus" },
-    { label: "Archive", path: "/archive" },
+    { label: "About", path: "/about", icon: <Info size={16} /> },
+    { label: "Syllabus", path: "/syllabus", icon: <FileText size={16} /> },
+    { label: "Archive", path: "/archive", icon: <Archive size={16} /> },
   ];
 
   return (
@@ -35,7 +35,7 @@ const Header = () => {
                 to={item.path}
                 className="text-cyber-text hover:text-cyber-accent transition-colors flex items-center gap-2"
               >
-                {item.icon && item.icon}
+                {item.icon}
                 {item.label}
               </Link>
             ))}
@@ -43,8 +43,9 @@ const Header = () => {
               href="https://forms.google.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="cyber-button"
+              className="cyber-button flex items-center gap-2"
             >
+              <Send size={16} />
               Apply
             </a>
           </nav>
@@ -68,7 +69,7 @@ const Header = () => {
                 className="block text-cyber-text hover:text-cyber-accent transition-colors flex items-center gap-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {item.icon && item.icon}
+                {item.icon}
                 {item.label}
               </Link>
             ))}
@@ -76,9 +77,10 @@ const Header = () => {
               href="https://forms.google.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="block cyber-button text-center"
+              className="block cyber-button text-center flex items-center gap-2"
               onClick={() => setIsMenuOpen(false)}
             >
+              <Send size={16} />
               Apply
             </a>
           </nav>
