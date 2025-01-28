@@ -19,32 +19,44 @@ const Archive = () => {
 
   const testimonials = [
     {
-      username: "CyberNinja",
-      text: "This program transformed my understanding of cybersecurity. The mentors were exceptional!",
+      username: "K21",
+      text: "In just 9 months, my team and I have gone from beginners to tackling CTF challenges, excelling on TryHackMe, and diving into penetration testing. Excited to keep growing!",
     },
     {
-      username: "SecureHacker",
-      text: "The hands-on approach and real-world scenarios made learning both fun and effective.",
+      username: "Psyduck",
+      text: "I joined the NCA@Nepal Mentorship Program halfway through and it exceeded my expectations. In a short time, I gained practical skills, connected with caring mentors, and found the supportive community I’d been seeking. Grateful for the opportunity and how it’s shaped my journey!",
     },
     {
-      username: "EthicalExplorer",
-      text: "I gained practical skills that I now use daily in my cybersecurity career.",
+      username: "cybercena",
+      text: "I found NCA@Nepal while searching for cybersecurity mentors, and it transformed my learning. With practical teaching, supportive mentors, and real-world focus, I stayed on track and grew in ways I couldn’t have imagined. This program is more valuable than any paid course!",
     },
     {
-      username: "CodeGuardian",
-      text: "The mentorship program provided a perfect balance of theory and practice.",
+      username: "Starman",
+      text: "I found NCA through a Facebook post in the Pentester Nepal group while seeking cybersecurity guidance. Staying active and joining the team helped me improve in many ways—time well spent with great teammates!",
     },
     {
-      username: "SecuritySage",
-      text: "The community support and networking opportunities were invaluable.",
+      username: "$Sudo",
+      text: "I found NCA@Nepal late one night when I heard ZeroAir dissecting a Minecraft-themed Hack The Box challenge. As a Minecraft nerd, I was hooked! I thought CTFs were just about exploiting broken systems, but the team showed me they’re about spotting real-world flaws.",
     },
     {
-      username: "ByteDefender",
-      text: "This program gave me the confidence to pursue a career in cybersecurity.",
+      username: "XExhausted",
+      text: "I found NCA@Nepal through my friend (sudo), and in 6-7 months, I went from a beginner to solving problems. Thanks to my team and NCA@Nepal for their support—I couldn’t have done it alone. Excited to keep growing together!",
     },
     {
-      username: "CipherMaster",
-      text: "The curriculum was well-structured and the mentors were always supportive.",
+      username: "Nirmit",
+      text: "NCA has been a transformative learning platform for me, where my cybersecurity journey truly advanced. Beyond gaining knowledge in cybersecurity, I also developed the skills to solve CTFs and tackle various cybersecurity challenges, significantly enhancing my expertise and confidence in the field.",
+    },
+    {
+      username: "kaloobaagh",
+      text: "I've been an active member of the NCA Nepal server for 5 months, learning penetration testing, Docker, and CTF skills, and appreciating the growth that comes from teamwork.",
+    },
+    {
+      username: "Felix",
+      text: "From the first steps with 'ls' and 'cd' to unraveling CTFs, my journey with NCA@Nepal has been a symphony of growth. From finding mentors to joining a driven team, NCA has offered more than I could imagine, and standing among such ambition is truly inspiring.",
+    },
+    {
+      username: "Skde",
+      text: "I found NCA@Nepal through an infosec Facebook group, and joining the mentorship program has been transformative. With minimal knowledge, I gained skills through mentors and a supportive community. We’ve grown through hands-on learning, and I’m excited to keep contributing and growing.",
     },
   ];
 
@@ -67,10 +79,7 @@ const Archive = () => {
       <div className="cyber-container">
         <h2 className="text-2xl font-bold text-gradient mb-4">Batch Overview</h2>
         <p className="text-cyber-text">
-          The Kaal-Vairab batch was our inaugural mentorship program, setting high
-          standards for cybersecurity education and practical training. This
-          cohort demonstrated exceptional dedication and achieved remarkable
-          results.
+        The Kaal-Vairab batch was the core group of NCA, with most of the mentees now becoming part of the NCA family. This inaugural mentorship cohort demonstrated exceptional dedication in their respective fields. Over the 6-month period, we learned and grew together, setting high standards for cybersecurity education and practical training, while achieving remarkable results.
         </p>
       </div>
 
@@ -101,7 +110,7 @@ const Archive = () => {
           Start and End Date
         </h2>
         <p className="text-cyber-text">
-          Duration: January 2024 - June 2024 (6 months)
+          Duration: August 13, 2024 - January 1, 2025 (4.7 months or 141 days)
         </p>
       </div>
 
@@ -110,10 +119,7 @@ const Archive = () => {
           Did It Meet NCA's Expectations?
         </h2>
         <p className="text-cyber-text">
-          The Kaal-Vairab batch exceeded our expectations, with participants
-          showing exceptional growth in their technical skills and professional
-          development. The success of this batch has set a strong foundation for
-          future programs.
+        The Kaal-Vairab batch exceeded all expectations, demonstrating remarkable growth in both technical skills and professional development. Since becoming part of NCA, they’ve actively participated in CTF challenges on CTFtime, continually improving with each competition. Their teamwork and consistent progress are clear proof of their learning. We are incredibly proud of their achievements and thrilled to have them as part of the NCA family!
         </p>
       </div>
     </div>

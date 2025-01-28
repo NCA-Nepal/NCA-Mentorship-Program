@@ -40,7 +40,7 @@ const Header = () => {
               </Link>
             ))}
             <a
-              href="https://forms.google.com"
+              href="https://forms.gle/WotTGBE3ZgF37wL98"
               target="_blank"
               rel="noopener noreferrer"
               className="cyber-button flex items-center gap-2"
@@ -74,7 +74,7 @@ const Header = () => {
               </Link>
             ))}
             <a
-              href="https://forms.google.com"
+              href="https://forms.gle/WotTGBE3ZgF37wL98"
               target="_blank"
               rel="noopener noreferrer"
               className="block cyber-button text-center flex items-center gap-2"

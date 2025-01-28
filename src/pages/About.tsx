@@ -10,17 +10,17 @@ const About = () => {
     {
       question: "What is the NCA Mentorship Program?",
       answer:
-        "The NCA Mentorship Program is a comprehensive cybersecurity training initiative designed to help aspiring professionals develop their skills through hands-on guidance.",
+        "The NCA Mentorship Program is a cybersecurity training initiative that provides beginners with hands-on guidance to develop essential skills for a successful career.",
     },
     {
       question: "Who can apply for this program?",
       answer:
-        "Anyone interested in cybersecurity can apply. We welcome beginners and intermediate learners who are passionate about the field.",
+        "Anyone interested in cybersecurity can apply. We welcome beginners who are passionate about the field.",
     },
     {
       question: "How long does the program last?",
       answer:
-        "The program typically runs for 3-6 months, depending on the batch and curriculum requirements.",
+        "The program typically runs for 4-6 months, depending on the batch and curriculum requirements.",
     },
     {
       question: "Is there any fee for the program?",
@@ -35,7 +35,7 @@ const About = () => {
     {
       question: "What will I learn in this program?",
       answer:
-        "You'll learn various aspects of cybersecurity including network security, web security, and ethical hacking.",
+        "You'll explore key areas of cybersecurity, including network security, web security, and more. Visit our syllabus page for a detailed overview.",
     },
     {
       question: "Do I need prior experience?",
@@ -50,7 +50,7 @@ const About = () => {
     {
       question: "Will I get a certificate?",
       answer:
-        "Yes, upon successful completion of the program, you'll receive a certificate of completion.",
+        "Yes, upon successful completion of the program, you'll receive a digital certificate of completion.",
     },
     {
       question: "What are the program requirements?",
@@ -66,10 +66,7 @@ const About = () => {
           About This Program
         </h1>
         <p className="text-cyber-text">
-          The NCA Mentorship Program is designed to bridge the gap between
-          theoretical knowledge and practical cybersecurity skills. Our program
-          offers hands-on experience, personalized guidance, and a supportive
-          learning environment.
+        The NCA Mentorship Program is a structured cybersecurity training initiative designed for beginners. It offers personalized guidance and hands-on experience to help aspiring professionals develop essential skills, gain practical knowledge, and build a strong foundation for a successful career in cybersecurity.
         </p>
       </div>
 
@@ -91,7 +88,7 @@ const About = () => {
         </p>
         <div className="text-center">
           <a
-            href="https://forms.google.com"
+            href="https://forms.gle/WotTGBE3ZgF37wL98"
             target="_blank"
             rel="noopener noreferrer"
             className="cyber-button"

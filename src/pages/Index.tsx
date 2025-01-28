@@ -37,9 +37,7 @@ const Index = () => {
           About the Program
         </h2>
         <p className="text-cyber-text mb-6">
-          The NCA Mentorship Program is designed to help aspiring cybersecurity
-          professionals develop their skills and knowledge through hands-on
-          guidance from experienced mentors.
+        The NCA Mentorship Program is a structured cybersecurity training initiative designed for beginners. It offers personalized guidance and hands-on experience to help aspiring professionals develop essential skills, gain practical knowledge, and build a strong foundation for a successful career in cybersecurity.
         </p>
         <div className="text-center">
           <a href="/about" className="cyber-button inline-block">
@@ -50,7 +48,7 @@ const Index = () => {
 
       <div className="cyber-container w-full max-w-2xl text-center">
         <h2 className="text-xl font-bold text-gradient mb-4">
-          Want to know about NCA @ Nepal?
+          Want to know about NCA@Nepal?
         </h2>
         <a
           href="https://ncateam.xyz/"
