@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
+    { label: "Home", path: "/", icon: <Home size={16} /> },
     { label: "About", path: "/about" },
     { label: "Syllabus", path: "/syllabus" },
     { label: "Archive", path: "/archive" },
@@ -22,7 +23,7 @@ const Header = () => {
               className="h-8 w-8 rounded"
             />
             <span className="text-cyber-accent font-bold hidden sm:block">
-              NCA Mentorship
+              NCA Mentorship Program
             </span>
           </Link>
 
@@ -32,8 +33,9 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="text-cyber-text hover:text-cyber-accent transition-colors"
+                className="text-cyber-text hover:text-cyber-accent transition-colors flex items-center gap-2"
               >
+                {item.icon && item.icon}
                 {item.label}
               </Link>
             ))}
@@ -63,9 +65,10 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="block text-cyber-text hover:text-cyber-accent transition-colors"
+                className="block text-cyber-text hover:text-cyber-accent transition-colors flex items-center gap-2"
                 onClick={() => setIsMenuOpen(false)}
               >
+                {item.icon && item.icon}
                 {item.label}
               </Link>
             ))}

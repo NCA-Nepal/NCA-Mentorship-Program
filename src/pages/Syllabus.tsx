@@ -65,10 +65,29 @@ const Syllabus = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="cyber-container">
-        <h1 className="text-3xl font-bold text-gradient mb-6">
+      <div className="cyber-container relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-gradient-to-r from-cyber-background via-cyber-lighter to-cyber-background animate-gradient-x -z-10"
+          style={{
+            backgroundSize: '200% 100%',
+            animation: 'gradient 15s ease infinite',
+          }}
+        />
+        <style>
+          {`
+            @keyframes gradient {
+              0% { background-position: 0% 50%; }
+              50% { background-position: 100% 50%; }
+              100% { background-position: 0% 50%; }
+            }
+          `}
+        </style>
+        <h1 className="text-3xl font-bold text-gradient mb-2">
           Program Syllabus
         </h1>
+        <p className="text-cyber-text mb-6">
+          This is following modules we plan to complete throughout the batch.
+        </p>
         <Accordion type="single" collapsible className="w-full">
           {modules.map((module, index) => (
             <AccordionItem key={index} value={`module-${index}`}>
