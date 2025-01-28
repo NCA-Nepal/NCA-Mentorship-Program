@@ -58,6 +58,10 @@ const Archive = () => {
       username: "Skde",
       text: "I found NCA@Nepal through an infosec Facebook group, and joining the mentorship program has been transformative. With minimal knowledge, I gained skills through mentors and a supportive community. We’ve grown through hands-on learning, and I’m excited to keep contributing and growing.",
     },
+    {
+      username: "P3gaXu5",
+      text: "I found this channel through Pentester Nepal, starting with basic Linux knowledge. It gave me a structured learning path and the right mindset. The community’s guidance has been crucial to my growth in cybersecurity.",
+    },
   ];
 
   return (
