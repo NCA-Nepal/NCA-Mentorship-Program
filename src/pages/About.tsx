@@ -66,7 +66,9 @@ const About = () => {
           About This Program
         </h1>
         <p className="text-cyber-text">
-        The NCA Mentorship Program is a structured cybersecurity training initiative designed for beginners. It offers personalized guidance and hands-on experience to help aspiring professionals develop essential skills, gain practical knowledge, and build a strong foundation for a successful career in cybersecurity.
+        The NCA Mentorship Program is a structured cybersecurity training initiative designed for beginners, offering personalized guidance and hands-on experience to help aspiring professionals build a strong foundation for a successful career in cybersecurity. Through this program, mentees receive mentorship from experienced professionals who provide direction on problem-solving, research methodologies, effective learning strategies, and maintaining motivation.
+
+        As part of the program, a new team called "RudraSec" will be formed, following the tradition of the previous batch, "Kaal-Vairab." Mentees will undergo rigorous training, with a primary focus on penetration testing. While CTF competitions will be incorporated as a short weekly practice through the CTFTime platform, the main emphasis remains on pentesting based on the structured syllabus. Upon completing the curriculum, mentees will take part in a two-week capstone exam module, where they must compromise specially designed or randomly selected machines and produce an industry-standard penetration testing report. These machines will be carefully chosen to ensure that no public write-ups exist, providing mentees with a realistic and challenging assessment of their skills.
         </p>
       </div>
 

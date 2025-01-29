@@ -24,11 +24,11 @@ export const batches: Record<string, BatchData> = {
     testimonials: [
       {
         username: "K21",
-        text: "In just 9 months, my team and I have gone from beginners to tackling CTF challenges, excelling on TryHackMe, and diving into penetration testing. Excited to keep growing!",
+        text: "In just 9 months, my journey into the world of cybersecurity challenges has been nothing short of transformative. Together with my team, I’ve evolved from a complete beginner to confidently tackling CTF challenges, excelling on platforms like TryHackMe, and exploring various aspects of penetration testing. We've gained hands-on technical skills and developed a problem-solving mindset that’s crucial in this field. Every challenge has been an opportunity for growth, and I’m proud of the progress we’ve made. The journey is far from over, and I’m excited to continue pushing the boundaries of what we can achieve together!",
       },
       {
         username: "Psyduck",
-        text: "I joined the NCA@Nepal Mentorship Program halfway through and it exceeded my expectations. In a short time, I gained practical skills, connected with caring mentors, and found the supportive community I'd been seeking. Grateful for the opportunity and how it's shaped my journey!",
+        text: "I discovered the NCA@Nepal Mentorship Program halfway through its cycle and immediately signed up—a decision I’ll always be grateful for. Even in that condensed timeframe, the program exceeded my expectations: I gained practical skills, connected with mentors who genuinely cared, and finally found the supportive community I’d been looking for. Thank you, NCA@Nepal, for welcoming me so warmly and creating a space where growth and collaboration thrive. This experience has already shaped my journey in ways I couldn’t have imagined!",
       },
       {
         username: "cybercena",
@@ -36,15 +36,15 @@ export const batches: Record<string, BatchData> = {
       },
       {
         username: "Starman",
-        text: "I found NCA through a Facebook post in the Pentester Nepal group while seeking cybersecurity guidance. Staying active and joining the team helped me improve in many ways—time well spent with great teammates!",
+        text: "I found NCA from Facebook, in the Pentester Nepal's group. I was in search of some guidance in cybersec, and this post came to me as a shining light. Joining the group, and forcing myself to stay active and learn something everyday was very fruitful. After that I joined the team too, and I feel I have improved myself in quite a few aspects. Guidance was all I wanted, I got guidance along with some team mates. Time well spent 😀",
       },
       {
         username: "$Sudo",
-        text: "I found NCA@Nepal late one night when I heard ZeroAir dissecting a Minecraft-themed Hack The Box challenge. As a Minecraft nerd, I was hooked! I thought CTFs were just about exploiting broken systems, but the team showed me they’re about spotting real-world flaws.",
+        text: "I found NCA@Nepal one late night while lurking in a voice call where ZeroAir (NCA@Nepal founder) was dissecting a Minecraft themed Hack The Box challenge (Log4J attacks—yes, the same ones that could’ve blown up my old Minecraft server!). As a Minecraft nerd, I was hooked. Back then, I thought CTFs were just “exploiting systems that are already broken? Why bother?” But the team showed me the magic: CTFs aren’t about “winning” fake hacks—they’re blueprints for spotting real-world flaws.They gave me a roadmap, explained categories like rev/pwn (my favorite—I love breaking systems!), and introduced me to mentors who answered my endless “Wait, how?!” questions. Now, I’m learning to smash buffers and chain exploits, surrounded by friends who cheer when I finally get it. Thanks to them, I’m not just a noob with a keyboard—I’m part of a crew that turns chaos into skills 😉.",
       },
       {
         username: "XExhausted",
-        text: "I found NCA@Nepal through my friend (sudo), and in 6-7 months, I went from a beginner to solving problems. Thanks to my team and NCA@Nepal for their support—I couldn’t have done it alone. Excited to keep growing together!",
+        text: "I found NCA@Nepal through my friend (sudo). In around 6–7 months, I have gone from knowing nothing about cybersecurity to being able to research and solve problems. I’m so grateful to my team, NCA@Nepal, for their support and guidance throughout this journey. I could not have learned this quickly on my own. I want to thank all my teammates for guiding and supporting me. I hope we will continue to learn and grow together in the future.",
       },
       {
         username: "Nirmit",
@@ -52,19 +52,19 @@ export const batches: Record<string, BatchData> = {
       },
       {
         username: "kaloobaagh",
-        text: "I've been an active member of the NCA Nepal server for 5 months, learning penetration testing, Docker, and CTF skills, and appreciating the growth that comes from teamwork.",
+        text: "Hello, I am a member of NCA Nepal. I joined this NCA Discord server about 5 months ago. Currently, I participate in the server as an NCA member and occasionally play CTF games. Additionally, I discuss various topics with my NCA team and learn from them. It has been 5 months since I joined this server, and I am still regularly active. The reason for my regular activity is that this server and its members have taught me many things. Even though I am just a BA student, I am grateful for the opportunity to be a member of the NCA server and to be included as a member of a CTF team. Before joining this server, I didn’t even know how to install Kali Linux. However, I can now play CTF games on Kali Linux and have learned the basics of penetration testing. I didn’t know much about Docker before, but I have now learned how to run Docker and use it effectively. One thing I’ve realized after joining the NCA team server is that working as a team provides many opportunities to learn and grow together. Thank you.",
       },
       {
         username: "Felix",
-        text: "From the first steps with 'ls' and 'cd' to unraveling CTFs, my journey with NCA@Nepal has been a symphony of growth. From finding mentors to joining a driven team, NCA has offered more than I could imagine, and standing among such ambition is truly inspiring.",
+        text: "From the first steps with 'ls' and 'cd' to unraveling the mysteries of CTFs, the journey with NCA@Nepal has been a symphony of growth and discovery.From finding mentors to having a like minded community to getting to be a part of a brilliant and driven team, NCA has offered way more than I could even begin to imagine. To stand among a team so brilliant and driven is to witness ambition take flight.",
       },
       {
         username: "Skde",
-        text: "I found NCA@Nepal through an infosec Facebook group, and joining the mentorship program has been transformative. With minimal knowledge, I gained skills through mentors and a supportive community. We’ve grown through hands-on learning, and I’m excited to keep contributing and growing.",
+        text: "I came across NCA@Nepal through an infosec Facebook group, and joining the mentorship program has been a game-changer. With minimal knowledge of cybersecurity, I quickly gained valuable skills thanks to the guidance of skilled mentors and a supportive community. Together with my team, we’ve grown our skills through hands-on learning, tackling challenges, and collaborating on CTFs. NCA@Nepal has helped me stay focused, motivated, and constantly improve. I’m grateful for the opportunity to be part of this journey and excited to continue growing—not just for myself, but to contribute to the future of our team as well.",
       },
       {
         username: "P3gaXu5",
-        text: "I found this channel through Pentester Nepal, starting with basic Linux knowledge. It gave me a structured learning path and the right mindset. The community’s guidance has been crucial to my growth in cybersecurity.",
+        text: "I discovered this channel through Pentester Nepal when I was new to cybersecurity, armed only with basic Linux knowledge. Here, I not only found a structured learning path but also developed the correct mindset to approach cybersecurity studies effectively. The community introduced me to skilled, passionate individuals who generously offered guidance whenever I faced challenges. Their support has been pivotal in my growth, and I’m thankful for the time invested in learning and evolving alongside such inspiring peers.",
       },
     ],
   },
