@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import GlitchText from "../components/GlitchText";
 
 const Index = () => {
   const [isLogoVisible, setIsLogoVisible] = useState(false);
@@ -24,9 +25,7 @@ const Index = () => {
       </div>
 
       <div className="text-center space-y-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-gradient">
-          NCA Mentorship Program
-        </h1>
+        <GlitchText text="NCA Mentorship Program" />
         <p className="text-xl text-cyber-accent">
           It is completely free. There is no catch to this.
         </p>

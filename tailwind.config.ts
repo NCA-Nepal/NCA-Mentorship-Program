@@ -64,6 +64,7 @@ export default {
       fontFamily: {
         mono: ["JetBrains Mono", "monospace"],
       },
+
       keyframes: {
         "matrix-rain": {
           "0%": { transform: "translateY(-100%)" },
@@ -77,6 +78,29 @@ export default {
           "80%": { transform: "translate(2px, -2px)" },
           "100%": { transform: "translate(0)" },
         },
+        "glitch-text": {
+          "0%": { 
+            textShadow: "0.05em 0 0 rgba(255,0,0,.75), -0.025em -0.05em 0 rgba(0,255,0,.75), 0.025em 0.05em 0 rgba(0,0,255,.75)"
+          },
+          "14%": {
+            textShadow: "0.05em 0 0 rgba(255,0,0,.75), -0.025em -0.05em 0 rgba(0,255,0,.75), 0.025em 0.05em 0 rgba(0,0,255,.75)"
+          },
+          "15%": {
+            textShadow: "-0.05em -0.025em 0 rgba(255,0,0,.75), 0.025em 0.025em 0 rgba(0,255,0,.75), -0.05em -0.05em 0 rgba(0,0,255,.75)"
+          },
+          "49%": {
+            textShadow: "-0.05em -0.025em 0 rgba(255,0,0,.75), 0.025em 0.025em 0 rgba(0,255,0,.75), -0.05em -0.05em 0 rgba(0,0,255,.75)"
+          },
+          "50%": {
+            textShadow: "0.025em 0.05em 0 rgba(255,0,0,.75), 0.05em 0 0 rgba(0,255,0,.75), 0 -0.05em 0 rgba(0,0,255,.75)"
+          },
+          "99%": {
+            textShadow: "0.025em 0.05em 0 rgba(255,0,0,.75), 0.05em 0 0 rgba(0,255,0,.75), 0 -0.05em 0 rgba(0,0,255,.75)"
+          },
+          "100%": {
+            textShadow: "-0.025em 0 0 rgba(255,0,0,.75), -0.025em -0.025em 0 rgba(0,255,0,.75), -0.025em -0.05em 0 rgba(0,0,255,.75)"
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -89,6 +113,7 @@ export default {
       animation: {
         "matrix-rain": "matrix-rain 20s linear infinite",
         glitch: "glitch 0.3s ease-in-out infinite",
+        "glitch-text": "glitch-text 3s infinite linear alternate-reverse",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
