@@ -13,6 +13,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const Archive = () => {
   const [selectedBatch] = useState("kaal-vairab");
@@ -65,7 +66,7 @@ const Archive = () => {
   ];
 
   return (
-    <div className="space-y-8 max-w-4xl mx-auto">
+    <div className="space-y-8 max-w-4xl mx-auto px-4 md:px-6">
       <div className="cyber-container">
         <h1 className="text-3xl font-bold text-gradient mb-6">
           Program Archives
@@ -83,29 +84,31 @@ const Archive = () => {
       <div className="cyber-container">
         <h2 className="text-2xl font-bold text-gradient mb-4">Batch Overview</h2>
         <p className="text-cyber-text">
-        The Kaal-Vairab batch was the core group of NCA, with most of the mentees now becoming part of the NCA family. This inaugural mentorship cohort demonstrated exceptional dedication in their respective fields. Over the 6-month period, we learned and grew together, setting high standards for cybersecurity education and practical training, while achieving remarkable results.
+          The Kaal-Vairab batch was the core group of NCA, with most of the mentees now becoming part of the NCA family. This inaugural mentorship cohort demonstrated exceptional dedication in their respective fields. Over the 6-month period, we learned and grew together, setting high standards for cybersecurity education and practical training, while achieving remarkable results.
         </p>
       </div>
 
       <div className="cyber-container">
         <h2 className="text-2xl font-bold text-gradient mb-6">Testimonials</h2>
-        <Carousel className="w-full max-w-xl mx-auto">
+        <Carousel className="w-full max-w-3xl mx-auto">
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index}>
                 <div className="p-4">
-                  <div className="cyber-container h-[200px] flex flex-col justify-center">
+                  <div className="cyber-container min-h-[300px] md:min-h-[250px] flex flex-col justify-start">
                     <h3 className="text-cyber-accent font-bold mb-4">
                       {testimonial.username}
                     </h3>
-                    <p className="text-cyber-text">{testimonial.text}</p>
+                    <ScrollArea className="h-[200px] md:h-[150px] w-full rounded-md">
+                      <p className="text-cyber-text pr-4">{testimonial.text}</p>
+                    </ScrollArea>
                   </div>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
         </Carousel>
       </div>
 
@@ -123,7 +126,7 @@ const Archive = () => {
           Did It Meet NCA's Expectations?
         </h2>
         <p className="text-cyber-text">
-        The Kaal-Vairab batch exceeded all expectations, demonstrating remarkable growth in both technical skills and professional development. Since becoming part of NCA, they’ve actively participated in CTF challenges on CTFtime, continually improving with each competition. Their teamwork and consistent progress are clear proof of their learning. We are incredibly proud of their achievements and thrilled to have them as part of the NCA family!
+          The Kaal-Vairab batch exceeded all expectations, demonstrating remarkable growth in both technical skills and professional development. Since becoming part of NCA, they've actively participated in CTF challenges on CTFtime, continually improving with each competition. Their teamwork and consistent progress are clear proof of their learning. We are incredibly proud of their achievements and thrilled to have them as part of the NCA family!
         </p>
       </div>
     </div>
