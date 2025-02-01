@@ -129,7 +129,7 @@ const modules = [
   {
     title: "Module 12: Exploitation & Lateral Movement Techniques",
     topics: [
-      "Shell Types (Shell Types (Reverse Shells)",
+      "Shell Types (Reverse Shell & Bind Shell)",
       "Metasploit Framework",
       "Port Forwarding Techniques (SSH, Chisel, etc...)",
       "File Transfer Methods",
