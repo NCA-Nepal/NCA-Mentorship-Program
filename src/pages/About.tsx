@@ -77,7 +77,7 @@ const About = () => {
           Application Status
         </h2>
         <p className="text-cyber-accent font-bold">
-          We are currently accepting applications.
+          The application period for the current batch is now closed. Please check back later for future opportunities.
         </p>
       </div>
 

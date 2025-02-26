@@ -59,7 +59,7 @@ const modules = [
   {
     title: "Module 6: Penetration Testing Process",
     topics: [
-      "Pre-engagement Activitie",
+      "Pre-engagement Activities",
       "Reconnaissance",
       "Vulnerability Assessment",
       "Exploitation",
