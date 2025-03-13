@@ -1,5 +1,5 @@
 
-import { Trophy, Calendar } from "lucide-react";
+import { Trophy, Calendar, Users, UserX } from "lucide-react";
 
 const CurrentBatch = () => {
   const students = [
@@ -53,7 +53,10 @@ const CurrentBatch = () => {
           </section>
           
           <section>
-            <h2 className="text-2xl font-bold text-cyber-accent mb-3">Current Students</h2>
+            <h2 className="text-2xl font-bold text-cyber-accent mb-3 flex items-center gap-2">
+              <Users className="text-cyber-accent" size={22} />
+              Current Mentees
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {students.map((student, index) => (
                 <div 
@@ -66,6 +69,16 @@ const CurrentBatch = () => {
                   </span>
                 </div>
               ))}
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-cyber-accent mb-3 flex items-center gap-2">
+              <UserX className="text-cyber-accent" size={22} />
+              Dropout Mentees
+            </h2>
+            <div className="p-4 border border-cyber-accent/30 bg-cyber-background-lighter rounded-md">
+              <p className="text-cyber-text text-center italic">None for now</p>
             </div>
           </section>
         </div>
