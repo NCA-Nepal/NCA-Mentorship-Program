@@ -1,5 +1,5 @@
 
-import { Trophy } from "lucide-react";
+import { Trophy, Calendar } from "lucide-react";
 
 const CurrentBatch = () => {
   const students = [
@@ -42,6 +42,14 @@ const CurrentBatch = () => {
               RudraSec is current live batch we are running. This will be for 6 months and we tend to teach pentesting and 
               mainly appsec at its core.
             </p>
+          </section>
+          
+          <section>
+            <h2 className="text-2xl font-bold text-cyber-accent mb-3">Timeline</h2>
+            <div className="flex items-center gap-2 text-cyber-text">
+              <Calendar className="text-cyber-accent" size={18} />
+              <span>March 8, 2025 - present</span>
+            </div>
           </section>
           
           <section>
