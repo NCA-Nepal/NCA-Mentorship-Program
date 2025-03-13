@@ -1,14 +1,15 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import MatrixBackground from "./components/MatrixBackground";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Index from "./pages/Index";
 import About from "./pages/About";
-import Syllabus from "./pages/Syllabus";
+import CurrentBatch from "./pages/CurrentBatch";
 import Archive from "./pages/Archive";
 import NotFound from "./pages/NotFound";
 
@@ -27,8 +28,9 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
-              <Route path="/syllabus" element={<Syllabus />} />
+              <Route path="/current-batch" element={<CurrentBatch />} />
               <Route path="/archive" element={<Archive />} />
+              <Route path="/syllabus" element={<Navigate to="https://handbook.ncateam.xyz/" replace />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

@@ -1,6 +1,7 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Home, FileText, Archive, Send, Info } from "lucide-react";
+import { Menu, X, Home, FileText, Archive, Send, Info, Users } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,8 +9,12 @@ const Header = () => {
   const navItems = [
     { label: "Home", path: "/", icon: <Home size={16} /> },
     { label: "About", path: "/about", icon: <Info size={16} /> },
-    { label: "Syllabus", path: "/syllabus", icon: <FileText size={16} /> },
+    { label: "Current Batch", path: "/current-batch", icon: <Users size={16} /> },
     { label: "Archive", path: "/archive", icon: <Archive size={16} /> },
+  ];
+
+  const externalLinks = [
+    { label: "Syllabus", url: "https://handbook.ncateam.xyz/", icon: <FileText size={16} /> }
   ];
 
   return (
@@ -38,6 +43,18 @@ const Header = () => {
                 {item.icon}
                 {item.label}
               </Link>
+            ))}
+            {externalLinks.map((item) => (
+              <a
+                key={item.url}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyber-text hover:text-cyber-accent transition-colors flex items-center gap-2"
+              >
+                {item.icon}
+                {item.label}
+              </a>
             ))}
             <a
               href="https://forms.gle/WotTGBE3ZgF37wL98"
@@ -72,6 +89,19 @@ const Header = () => {
                 {item.icon}
                 {item.label}
               </Link>
+            ))}
+            {externalLinks.map((item) => (
+              <a
+                key={item.url}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-cyber-text hover:text-cyber-accent transition-colors flex items-center gap-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.icon}
+                {item.label}
+              </a>
             ))}
             <a
               href="https://forms.gle/WotTGBE3ZgF37wL98"

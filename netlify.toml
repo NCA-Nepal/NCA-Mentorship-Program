@@ -1,4 +1,12 @@
+
+[[redirects]]
+from = "/syllabus"
+to = "https://handbook.ncateam.xyz/"
+status = 301
+force = true
+
 [[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
+
