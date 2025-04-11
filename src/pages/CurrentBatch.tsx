@@ -19,12 +19,15 @@ const CurrentBatch = () => {
     "Aatif Maharjan",
     "Swastika Timalasena",
     "Kabina Thapa",
-    "Aaska Prajapati",
     "Naresh BC",
-    "Siddhartha Shah",
     "Manalika Shrestha",
     "Sanju Rimal",
     "Gaurav Paudel"
+  ];
+
+  const dropouts = [
+    "Aaska Prajapati",
+    "Siddhartha Shah"
   ];
 
   return (
@@ -77,8 +80,24 @@ const CurrentBatch = () => {
               <UserX className="text-cyber-accent" size={22} />
               Dropout Mentees
             </h2>
-            <div className="p-4 border border-cyber-accent/30 bg-cyber-background-lighter rounded-md">
-              <p className="text-cyber-text text-center italic">None for now</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {dropouts.length > 0 ? (
+                dropouts.map((dropout, index) => (
+                  <div 
+                    key={index} 
+                    className="p-3 border border-cyber-accent/30 bg-cyber-background-lighter rounded-md hover:border-cyber-accent transition-colors"
+                  >
+                    <span className="text-cyber-text font-medium flex items-center gap-2">
+                      <span className="text-cyber-accent font-bold">{index + 1}.</span>
+                      {dropout}
+                    </span>
+                  </div>
+                ))
+              ) : (
+                <div className="p-4 border border-cyber-accent/30 bg-cyber-background-lighter rounded-md col-span-full">
+                  <p className="text-cyber-text text-center italic">None for now</p>
+                </div>
+              )}
             </div>
           </section>
         </div>
