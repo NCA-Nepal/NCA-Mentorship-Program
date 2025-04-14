@@ -1,10 +1,19 @@
 
-import { Trophy, Calendar, Users, UserX } from "lucide-react";
+import { Trophy, Calendar, Users, UserX, ChevronDown, ChevronRight, CalendarClock, HelpCircle } from "lucide-react";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { useState } from "react";
 
 const CurrentBatch = () => {
+  const [openDropouts, setOpenDropouts] = useState<string[]>([]);
+
+  const toggleDropout = (id: string) => {
+    setOpenDropouts(prev => 
+      prev.includes(id) ? prev.filter(item => item !== id) : [...prev, id]
+    );
+  };
+
   const students = [
     "Rajiv Khanal",
-    "Samip Poudel",
     "Aarman Rai",
     "Manav Khatiwada",
     "Swosteek Poudel/Paras",
@@ -26,8 +35,27 @@ const CurrentBatch = () => {
   ];
 
   const dropouts = [
-    "Aaska Prajapati",
-    "Siddhartha Shah"
+    {
+      id: "aaska-prajapati",
+      name: "Aaska Prajapati",
+      date: "April 7, 2025",
+      duration: "stayed 29 days only",
+      reason: "We provided the content along with a few modules, but they were still behind on Linux. We had to proceed with the content regardless. Additionally, the time commitment agreed upon in the MoU was not fulfilled."
+    },
+    {
+      id: "siddhartha-shah",
+      name: "Siddhartha Shah",
+      date: "April 7, 2025",
+      duration: "stayed 29 days only",
+      reason: "We provided the content along with a few modules, but they were still behind on Linux. We had to proceed with the content regardless. Additionally, the time commitment agreed upon in the MoU was not fulfilled."
+    },
+    {
+      id: "samip-poudel",
+      name: "Samip Poudel",
+      date: "April 14, 2025",
+      duration: "stayed 35 days only",
+      reason: "He did not commit enough time, failed to submit assignments, and was given a warning. Despite that, he didn't correct his mistakes. Eventually, he chose to leave the mentorship program on his own."
+    }
   ];
 
   return (
@@ -80,18 +108,44 @@ const CurrentBatch = () => {
               <UserX className="text-cyber-accent" size={22} />
               Dropout Mentees
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 gap-4">
               {dropouts.length > 0 ? (
                 dropouts.map((dropout, index) => (
-                  <div 
-                    key={index} 
-                    className="p-3 border border-cyber-accent/30 bg-cyber-background-lighter rounded-md hover:border-cyber-accent transition-colors"
+                  <Collapsible 
+                    key={dropout.id}
+                    open={openDropouts.includes(dropout.id)}
+                    onOpenChange={() => toggleDropout(dropout.id)}
+                    className="border border-cyber-accent/30 bg-cyber-background-lighter rounded-md hover:border-cyber-accent transition-colors"
                   >
-                    <span className="text-cyber-text font-medium flex items-center gap-2">
-                      <span className="text-cyber-accent font-bold">{index + 1}.</span>
-                      {dropout}
-                    </span>
-                  </div>
+                    <CollapsibleTrigger className="w-full p-3 flex items-center justify-between cursor-pointer">
+                      <span className="text-cyber-text font-medium flex items-center gap-2">
+                        <span className="text-cyber-accent font-bold">{index + 1}.</span>
+                        {dropout.name} <span className="text-cyber-text/60 text-sm italic ml-2">({dropout.duration})</span>
+                      </span>
+                      {openDropouts.includes(dropout.id) ? 
+                        <ChevronDown className="text-cyber-accent" size={18} /> : 
+                        <ChevronRight className="text-cyber-accent" size={18} />
+                      }
+                    </CollapsibleTrigger>
+                    <CollapsibleContent className="p-3 pt-0 border-t border-cyber-accent/30 bg-cyber-background/50">
+                      <div className="space-y-2 mt-2">
+                        <div className="flex items-start gap-2">
+                          <CalendarClock className="text-cyber-accent mt-1 shrink-0" size={16} />
+                          <div>
+                            <span className="text-cyber-accent font-semibold">Dropout Date:</span> 
+                            <span className="text-cyber-text ml-2">{dropout.date}</span>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <HelpCircle className="text-cyber-accent mt-1 shrink-0" size={16} />
+                          <div>
+                            <span className="text-cyber-accent font-semibold">Dropout Reason:</span> 
+                            <p className="text-cyber-text mt-1">{dropout.reason}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </CollapsibleContent>
+                  </Collapsible>
                 ))
               ) : (
                 <div className="p-4 border border-cyber-accent/30 bg-cyber-background-lighter rounded-md col-span-full">
