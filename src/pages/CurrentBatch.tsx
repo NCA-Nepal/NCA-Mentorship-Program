@@ -30,11 +30,17 @@ const CurrentBatch = () => {
     "Kabina Thapa",
     "Naresh BC",
     "Manalika Shrestha",
-    "Sanju Rimal",
     "Gaurav Paudel"
   ];
 
   const dropouts = [
+    {
+      id: "sanju-rimal",
+      name: "Sanju Rimal",
+      date: "March 8, 2025",
+      duration: "before the program started",
+      reason: "She had a medical emergency, so she couldn't join any of our sessions. As she needs time to rest and recover, she couldn't commit enough time to the program. Therefore, we had to drop her from it."
+    },
     {
       id: "aaska-prajapati",
       name: "Aaska Prajapati",
