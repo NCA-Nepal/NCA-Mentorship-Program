@@ -61,28 +61,28 @@ const CurrentBatch = () => {
       id: "nirajan-subedi",
       name: "Nirajan Subedi",
       date: "April 20, 2025",
-      duration: "stayed 42 days only",
+      duration: "stayed XX days only",
       reason: "Updating soon"
     },
     {
       id: "aatif-maharjan",
       name: "Aatif Maharjan",
       date: "April 22, 2025",
-      duration: "stayed 44 days only",
+      duration: "stayed XX days only",
       reason: "Updating soon"
     },
     {
       id: "kabina-thapa",
       name: "Kabina Thapa",
       date: "April 25, 2025",
-      duration: "stayed 47 days only",
+      duration: "stayed XX days only",
       reason: "Updating soon"
     },
     {
       id: "sakriya-lama",
       name: "Sakriya Lama",
       date: "April 27, 2025",
-      duration: "stayed 49 days only",
+      duration: "stayed XX days only",
       reason: "Updating soon"
     }
   ];
