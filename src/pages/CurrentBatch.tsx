@@ -23,11 +23,6 @@ const CurrentBatch = () => {
     "Dinesh Joshi",
     "Ajay Tamang",
     "Suwan Dhital",
-    "Nirajan Subedi",
-    "Sakriya Lama",
-    "Aatif Maharjan",
-    "Swastika Timalasena",
-    "Kabina Thapa",
     "Naresh BC",
     "Manalika Shrestha",
     "Gaurav Paudel"
@@ -61,6 +56,34 @@ const CurrentBatch = () => {
       date: "April 14, 2025",
       duration: "stayed 35 days only",
       reason: "He did not commit enough time, failed to submit assignments, and was given a warning. Despite that, he didn't correct his mistakes. Eventually, he chose to leave the mentorship program on his own."
+    },
+    {
+      id: "nirajan-subedi",
+      name: "Nirajan Subedi",
+      date: "April 20, 2025",
+      duration: "stayed 42 days only",
+      reason: "Updating soon"
+    },
+    {
+      id: "aatif-maharjan",
+      name: "Aatif Maharjan",
+      date: "April 22, 2025",
+      duration: "stayed 44 days only",
+      reason: "Updating soon"
+    },
+    {
+      id: "kabina-thapa",
+      name: "Kabina Thapa",
+      date: "April 25, 2025",
+      duration: "stayed 47 days only",
+      reason: "Updating soon"
+    },
+    {
+      id: "sakriya-lama",
+      name: "Sakriya Lama",
+      date: "April 27, 2025",
+      duration: "stayed 49 days only",
+      reason: "Updating soon"
     }
   ];
 
