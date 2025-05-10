@@ -1,4 +1,3 @@
-
 import { Trophy, Calendar, Users, UserX, ChevronDown, ChevronRight, CalendarClock, HelpCircle } from "lucide-react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { useState } from "react";
@@ -25,7 +24,8 @@ const CurrentBatch = () => {
     "Suwan Dhital",
     "Naresh BC",
     "Manalika Shrestha",
-    "Gaurav Paudel"
+    "Gaurav Paudel",
+    "Aatif Maharjan"
   ];
 
   const dropouts = [
@@ -60,13 +60,6 @@ const CurrentBatch = () => {
     {
       id: "nirajan-subedi",
       name: "Nirajan Subedi",
-      date: "May XX, 2025",
-      duration: "stayed XX days only",
-      reason: "Updating soon"
-    },
-    {
-      id: "aatif-maharjan",
-      name: "Aatif Maharjan",
       date: "May XX, 2025",
       duration: "stayed XX days only",
       reason: "Updating soon"
