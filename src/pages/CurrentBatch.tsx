@@ -1,3 +1,4 @@
+
 import { Trophy, Calendar, Users, UserX, ChevronDown, ChevronRight, CalendarClock, HelpCircle } from "lucide-react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { useState } from "react";
@@ -25,7 +26,8 @@ const CurrentBatch = () => {
     "Naresh BC",
     "Manalika Shrestha",
     "Gaurav Paudel",
-    "Aatif Maharjan"
+    "Aatif Maharjan",
+    "Swastika Timalasena"
   ];
 
   const dropouts = [
