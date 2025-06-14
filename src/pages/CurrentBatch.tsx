@@ -26,8 +26,7 @@ const CurrentBatch = () => {
     "Naresh BC",
     "Manalika Shrestha",
     "Gaurav Paudel",
-    "Aatif Maharjan",
-    "Swastika Timalasena"
+    "Aatif Maharjan"
   ];
 
   const dropouts = [
@@ -76,6 +75,13 @@ const CurrentBatch = () => {
     {
       id: "sakriya-lama",
       name: "Sakriya Lama",
+      date: "May XX, 2025",
+      duration: "stayed XX days only",
+      reason: "Updating soon"
+    },
+    {
+      id: "swastika-timalasena",
+      name: "Swastika Timalasena",
       date: "May XX, 2025",
       duration: "stayed XX days only",
       reason: "Updating soon"
