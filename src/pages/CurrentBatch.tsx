@@ -35,56 +35,56 @@ const CurrentBatch = () => {
       name: "Sanju Rimal",
       date: "March 8, 2025",
       duration: "before the program started",
-      reason: "She had a medical emergency, so she couldn't join any of our sessions. As she needs time to rest and recover, she couldn't commit enough time to the program. Therefore, we had to drop her from it."
+      reason: "She had a medical emergency and could not join any of our sessions. As she required time to rest and recover, she was unable to commit to the program, which resulted in her dropout."
     },
     {
       id: "aaska-prajapati",
       name: "Aaska Prajapati",
       date: "April 7, 2025",
       duration: "stayed 29 days only",
-      reason: "We provided the content along with a few modules, but they were still behind on Linux. We had to proceed with the content regardless. Additionally, the time commitment agreed upon in the MoU was not fulfilled."
+      reason: "Despite receiving the course materials and several modules, she struggled to keep up with the Linux content. The time commitment stated in the MoU was not fulfilled, and we had to proceed with the batch. Thus, she was dropped from the program."
     },
     {
       id: "siddhartha-shah",
       name: "Siddhartha Shah",
       date: "April 7, 2025",
       duration: "stayed 29 days only",
-      reason: "We provided the content along with a few modules, but they were still behind on Linux. We had to proceed with the content regardless. Additionally, the time commitment agreed upon in the MoU was not fulfilled."
+      reason: "Despite receiving the course materials and several modules, he struggled to keep up with the Linux content. The time commitment stated in the MoU was not fulfilled, and we had to proceed with the batch. Thus, he was dropped from the program."
     },
     {
       id: "samip-poudel",
       name: "Samip Poudel",
       date: "April 14, 2025",
       duration: "stayed 35 days only",
-      reason: "He did not commit enough time, failed to submit assignments, and was given a warning. Despite that, he didn't correct his mistakes. Eventually, he chose to leave the mentorship program on his own."
+      reason: "He did not dedicate sufficient time, failed to submit assignments, and did not improve even after being warned. Eventually, he chose to leave the mentorship program of his own accord."
     },
     {
       id: "nirajan-subedi",
       name: "Nirajan Subedi",
-      date: "May XX, 2025",
-      duration: "stayed XX days only",
-      reason: "Updating soon"
+      date: "May 5, 2025",
+      duration: "stayed 59 days only",
+      reason: "Due to irregular attendance and consistently poor performance, he fell behind and could not keep up with the syllabus. As a result, we made the decision to discontinue his participation in the program."
     },
     {
       id: "kabina-thapa",
       name: "Kabina Thapa",
-      date: "May XX, 2025",
-      duration: "stayed XX days only",
-      reason: "Updating soon"
+      date: "April 26, 2025",
+      duration: "stayed 50 days only",
+      reason: "She demonstrated very poor performance and did not submit assignments on time, although she eventually completed them. Later, due to medical reasons, she was unable to continue with our mentorship program."
     },
     {
       id: "sakriya-lama",
       name: "Sakriya Lama",
-      date: "May XX, 2025",
-      duration: "stayed XX days only",
-      reason: "Updating soon"
+      date: "May 5, 2025",
+      duration: "stayed 59 days only",
+      reason: "Her performance was below expectations, and assignments were not submitted on time—although eventually completed. She was also irregular in class, attending only about two days per week whereas other mentees dedicated 5–7 hours per day. Thus, we decided to discontinue her from the program."
     },
     {
       id: "swastika-timalasena",
       name: "Swastika Timalasena",
-      date: "May XX, 2025",
-      duration: "stayed XX days only",
-      reason: "Updating soon"
+      date: "May 31, 2025",
+      duration: "stayed 85 days only",
+      reason: "Despite her efforts, Swastika was unable to keep pace with the syllabus due to time management challenges. Although encouraged to dedicate more time, she was unable to do so and ultimately decided to leave the mentorship program herself."
     }
   ];
 
