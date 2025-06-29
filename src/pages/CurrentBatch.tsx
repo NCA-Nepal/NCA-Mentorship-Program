@@ -1,4 +1,3 @@
-
 import { Trophy, Calendar, Users, UserX, ChevronDown, ChevronRight, CalendarClock, HelpCircle } from "lucide-react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { useState } from "react";
@@ -15,7 +14,6 @@ const CurrentBatch = () => {
   const students = [
     "Rajiv Khanal",
     "Aarman Rai",
-    "Manav Khatiwada",
     "Swosteek Poudel/Paras",
     "Sujan Dhakal",
     "Sadikshya Budhathoki",
@@ -23,9 +21,7 @@ const CurrentBatch = () => {
     "Dinesh Joshi",
     "Ajay Tamang",
     "Suwan Dhital",
-    "Naresh BC",
     "Manalika Shrestha",
-    "Gaurav Paudel",
     "Aatif Maharjan"
   ];
 
@@ -59,6 +55,20 @@ const CurrentBatch = () => {
       reason: "He did not dedicate sufficient time, failed to submit assignments, and did not improve even after being warned. Eventually, he chose to leave the mentorship program of his own accord."
     },
     {
+      id: "manav-khatiwada",
+      name: "Manav Khatiwada",
+      date: "May 15, 2025",
+      duration: "stayed 68 days only",
+      reason: "He was a decent mentee who regularly completed tasks and actively participated in the mentorship program. However, due to personal reasons, he decided to leave the program to focus on a new position at a networking company. Our handbook's networking content proved helpful for his job interview."
+    },
+    {
+      id: "naresh-bc",
+      name: "Naresh BC",
+      date: "May 18, 2025",
+      duration: "stayed 71 days only",
+      reason: "He demonstrated good performance initially but gradually became irregular in attending classes. Eventually, he left the mentorship program without prior notice, leading us to terminate the MoU and move him to the dropout list."
+    },
+    {
       id: "nirajan-subedi",
       name: "Nirajan Subedi",
       date: "May 5, 2025",
@@ -85,6 +95,13 @@ const CurrentBatch = () => {
       date: "May 31, 2025",
       duration: "stayed 85 days only",
       reason: "Despite her efforts, Swastika was unable to keep pace with the syllabus due to time management challenges. Although encouraged to dedicate more time, she was unable to do so and ultimately decided to leave the mentorship program herself."
+    },
+    {
+      id: "gaurav-paudel",
+      name: "Gaurav Paudel",
+      date: "June 21, 2025",
+      duration: "stayed 105 days only",
+      reason: "He was an exceptional and hardworking mentee who developed a strong mindset for solving CTF challenges from easy to medium difficulty and demonstrated rapid learning abilities. However, due to consistent punctuality issues and in accordance with the terms of our signed MoU, we had to discontinue his participation in the program."
     }
   ];
 
